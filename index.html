@@ -25,11 +25,11 @@
     }
     .background-primary{
         
-        background: rgba(0,0,0,0.7)url(images/clinibg.jpg);
+        background: rgba(0,0,0,0.5)url(images/clinibg.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size:cover;
-        height: 600px;
+        height: 800px;
         background-blend-mode: darken;
     }
     .background-button
@@ -58,7 +58,7 @@
     }
 </style>
 <body>
-    <nav class="w-full background-dark flex items-center flex-row justify-around sticky">
+    <nav class="w-full background-dark flex items-center flex-row justify-around sticky py-5">
           <div class="rounded-xl">
            <img src="./images/cliniclogo-removebg-preview.png" alt="logo" class="h-20 w-20">
           </div>
@@ -79,17 +79,17 @@
                 </div> 
           </div>
         </nav>
-    <section class="background-primary justify-center flex">
+    <section class="background-primary lg:h-[600px] justify-center flex">
         <div class="flex flex-col space-y-12">
             <div class="items-center my-5">
-               <h1 class="font-extrabold text-5xl text-white tet-center">Om Sai Physiotherapy Center</h1>
+               <h1 class="font-extrabold lg:text-5xl text-3xl text-white text-center">Om Sai Physiotherapy Center</h1>
                <p class="font-bold text-2xl text-white text-center my-10">Get the touch of care</p>
             </div>
             <div>
                 <h1 class="text-white text-center text-2xl">Home Services are also Available</h1>
                 <h1 class="text-white text-center text-2xl">Treatment with in only 150 rs</h1>
             </div>
-            <div class="text-white flex lg:flex-row flex-col justify-between">
+            <div class="text-white flex lg:flex-row flex-col lg:justify-between space-y-10 lg:space-y-0 items-center">
                  <div class="flex flex-row items-center background-button w-fit p-2 rounded-lg ">
                     <img src="images/icons8-call-40.png" alt="call logo">
                      <p class="font-bold text-2xl pl-2">Call</p>
@@ -106,8 +106,8 @@
         </div>
         </section>
         <section class="background-light py-10 space-y-10">
-            <h1 class="text-5xl font-extrabold py-5 text-center">Where we give services?</h1>
-            <div class="flex flex-col lg:flex-row justify-evenly ">
+            <h1 class="lg:text-5xl text-3xl font-extrabold py-5 text-center">Where we give services?</h1>
+            <div class="flex flex-col lg:flex-row justify-evenly items-center space-y-10">
                 <div class="bg-grey shadow-2xl rounded-lg p-5">
                     <div class=" flex items-center flex-col w-72">
                     <img src="images/clinictreatimg.png" class="w-72 h-56 py-2 rounded-lg bg-green">
@@ -128,49 +128,47 @@
             </div>
         </section>
         <section class="background-light flex flex-col items-center space-y-10 py-10 ">
-            <h1 class="text-center font-extrabold text-5xl">What We Treat ?</h1>
+            <h1 class="text-center font-extrabold lg:text-5xl text-3xl">What We Treat ?</h1>
             
-            <div class="flex flex-row lg:space-x-32 ">
-                <div class="flex flex-col items-center">
+            <div class="grid lg:grid-cols-4 grid-cols-3 lg:gap-32 gap-5">
+                <div class="flex flex-col items-center ">
                     <img src="images/back.png" class="lg:h-44 lg:w-44  h-24 w-24">
-                    <p class="text-blue text-2xl font-bold">Back Pain</p>
+                    <p class="text-blue lg:text-2xl  text-xl font-bold">Back Pain</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center ">
                     <img src="images/neck.png" class="lg:h-44 lg:w-44 h-24 w-24">
-                    <p class="text-blue text-2xl font-bold">Neck Pain</p>
+                    <p class="text-blue lg:text-2xl  text-xl font-bold">Neck Pain</p>
                 </div>
                 <div class="flex flex-col items-center">
                     <img src="images/shoulder.png" class="lg:h-44 lg:w-44 h-24 w-24">
-                    <p class="text-blue text-2xl font-bold">Shoulder Pain</p>
+                    <p class="text-blue lg:text-2xl text-xl text-center font-bold">Shoulder Pain</p>
                 </div>
                 <div class="flex flex-col items-center">
                     <img src="images/hip.png" class="lg:h-44 lg:w-44 h-24 w-24">
-                    <p class="text-blue text-2xl font-bold">Hip Pain</p>
+                    <p class="text-blue lg:text-2xl text-xl font-bold">Hip Pain</p>
                 </div>   
-            </div> 
-            <div class="flex flex-row lg:space-x-32  ">
                 <div class="flex flex-col items-center">
-                    <img src="images/knee.png" class="h-44 w-44">
-                    <p class="text-blue text-2xl font-bold">Knee Pain</p>
+                    <img src="images/knee.png" class="lg:h-44 lg:w-44 h-24 w-24">
+                    <p class="text-blue lg:text-2xl text-xl font-bold">Knee Pain</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="images/ankel.png" class="h-44 w-44">
-                    <p class="text-blue text-2xl font-bold">Ankle Pain</p>
+                    <img src="images/ankel.png" class="lg:h-44 lg:w-44 h-24 w-24">
+                    <p class="text-blue lg:text-2xl text-xl font-bold">Ankle Pain</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="images/foot.png" class="h-44 w-44">
-                    <p class="text-blue text-2xl font-bold">Foot Pain</p>
+                    <img src="images/foot.png" class="lg:h-44 lg:w-44 h-24 w-24">
+                    <p class="text-blue lg:text-2xl text-xl font-bold">Foot Pain</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="images/wrist.png" class="h-44 w-44">
-                    <p class="text-blue text-2xl font-bold">Wrist Pain</p>
+                    <img src="images/wrist.png" class="lg:h-44 lg:w-44 h-24 w-24">
+                    <p class="text-blue lg:text-2xl text-xl font-bold">Wrist Pain</p>
                 </div>   
             </div>
         
         </section>
         <section class="background-light flex items-center flex-col space-y-10 py-20">
             <h1 class="text-5xl text-center font-bold ">About Us</h1>
-           <div class="background-dark w-[80%] rounded-lg shadow-2xl px-10 flex flex-row space-x-32 justify-center"> 
+           <div class="background-dark w-[80%] rounded-lg shadow-2xl px-10 flex lg:flex-row flex-col space-y-10 lg:space-y-0 lg:space-x-32 lg:justify-center items-center"> 
             <div class="">
               <h1 class="text-white text-5xl font-bold "><span class="largenum" largedata-val='50000'></span>+</h1>
                <p class="text-white  font-bold text-2xl mx-5"> Patients</p> 
@@ -186,11 +184,11 @@
             
              </div>
 
-             <div class="flex flex-row bg-white rounded-xl shadow-xl w-[80%] px-10 py-10">
+             <div class="flex lg:flex-row flex-col bg-white rounded-xl shadow-xl w-[80%] px-10 py-10">
                 <div class="">
                     <img src="images/drratn-removebg-preview.png" class="w-[400px]">
                 </div>
-                <p class="text-justify w-[60%] px-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia libero ipsam nam veniam tempora facilis earum aspernatur tenetur id doloribus provident amet quis quasi alias aperiam dolorem ad fugit.</p>
+                <p class="text-justify lg:w-[60%] lg:px-10 px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia libero ipsam nam veniam tempora facilis earum aspernatur tenetur id doloribus provident amet quis quasi alias aperiam dolorem ad fugit.</p>
               </div>
         </section>
         <section class="background-light flex flex-col items-center space-y-10 py-10">

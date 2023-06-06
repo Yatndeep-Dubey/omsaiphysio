@@ -52,6 +52,10 @@
     {
         color: #ff8c8c;
     }
+    .bg-transparent
+    {
+        background-color: rgba(10, 233, 233, 0.596);
+    }
 </style>
 <body>
     <nav class="w-full background-dark flex items-center flex-row justify-around sticky">
@@ -63,7 +67,7 @@
                 Book An Appointment
             </button>
           </div>
-           <div class="flex flex-row">
+           <div class="lg:flex flex-row hidden">
                 <div class="px-10 font-bold text-2xl">
                     <li class="list-none text-white">Home</li>
                 </div>
@@ -85,7 +89,7 @@
                 <h1 class="text-white text-center text-2xl">Home Services are also Available</h1>
                 <h1 class="text-white text-center text-2xl">Treatment with in only 150 rs</h1>
             </div>
-            <div class="text-white flex justify-between">
+            <div class="text-white flex lg:flex-row flex-col justify-between">
                  <div class="flex flex-row items-center background-button w-fit p-2 rounded-lg ">
                     <img src="images/icons8-call-40.png" alt="call logo">
                      <p class="font-bold text-2xl pl-2">Call</p>
@@ -101,9 +105,9 @@
             </div>
         </div>
         </section>
-        <section class="bg-white py-10 space-y-10">
+        <section class="background-light py-10 space-y-10">
             <h1 class="text-5xl font-extrabold py-5 text-center">Where we give services?</h1>
-            <div class="flex flex-row justify-evenly ">
+            <div class="flex flex-col lg:flex-row justify-evenly ">
                 <div class="bg-grey shadow-2xl rounded-lg p-5">
                     <div class=" flex items-center flex-col w-72">
                     <img src="images/clinictreatimg.png" class="w-72 h-56 py-2 rounded-lg bg-green">
@@ -123,28 +127,28 @@
                 
             </div>
         </section>
-        <section class="bg-white flex flex-col items-center space-y-10 py-10 ">
+        <section class="background-light flex flex-col items-center space-y-10 py-10 ">
             <h1 class="text-center font-extrabold text-5xl">What We Treat ?</h1>
             
-            <div class="flex flex-row space-x-32 ">
+            <div class="flex flex-row lg:space-x-32 ">
                 <div class="flex flex-col items-center">
-                    <img src="images/back.png" class="h-44 w-44">
+                    <img src="images/back.png" class="lg:h-44 lg:w-44  h-24 w-24">
                     <p class="text-blue text-2xl font-bold">Back Pain</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="images/neck.png" class="h-44 w-44">
+                    <img src="images/neck.png" class="lg:h-44 lg:w-44 h-24 w-24">
                     <p class="text-blue text-2xl font-bold">Neck Pain</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="images/shoulder.png" class="h-44 w-44">
+                    <img src="images/shoulder.png" class="lg:h-44 lg:w-44 h-24 w-24">
                     <p class="text-blue text-2xl font-bold">Shoulder Pain</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="images/hip.png" class="h-44 w-44">
+                    <img src="images/hip.png" class="lg:h-44 lg:w-44 h-24 w-24">
                     <p class="text-blue text-2xl font-bold">Hip Pain</p>
                 </div>   
             </div> 
-            <div class="flex flex-row space-x-32  ">
+            <div class="flex flex-row lg:space-x-32  ">
                 <div class="flex flex-col items-center">
                     <img src="images/knee.png" class="h-44 w-44">
                     <p class="text-blue text-2xl font-bold">Knee Pain</p>
@@ -164,19 +168,111 @@
             </div>
         
         </section>
-        <section>
-            <h1 class="text-5xl text-center ">About Us</h1>
-           <div>
-            <div>
-              1000+patients
+        <section class="background-light flex items-center flex-col space-y-10 py-20">
+            <h1 class="text-5xl text-center font-bold ">About Us</h1>
+           <div class="background-dark w-[80%] rounded-lg shadow-2xl px-10 flex flex-row space-x-32 justify-center"> 
+            <div class="">
+              <h1 class="text-white text-5xl font-bold "><span class="largenum" largedata-val='50000'></span>+</h1>
+               <p class="text-white  font-bold text-2xl mx-5"> Patients</p> 
             </div>
-            <div>
+                <div class="">
+                    <h1 class="text-white text-5xl font-bold "><span class="largenum" largedata-val='50000'></span>+</h1>
+                     <p class="text-white  font-bold text-2xl mx-5"> Patients</p> 
+                  </div>
+                <div class="">
+                    <h1 class="text-white text-5xl font-bold "><span class="largenum" largedata-val='50000'></span>+</h1>
+                     <p class="text-white  font-bold text-2xl mx-5"> Patients</p> 
+                  </div>
             
-            </div>
-            <div>
+             </div>
 
+             <div class="flex flex-row bg-white rounded-xl shadow-xl w-[80%] px-10 py-10">
+                <div class="">
+                    <img src="images/drratn-removebg-preview.png" class="w-[400px]">
+                </div>
+                <p class="text-justify w-[60%] px-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia libero ipsam nam veniam tempora facilis earum aspernatur tenetur id doloribus provident amet quis quasi alias aperiam dolorem ad fugit.</p>
+              </div>
+        </section>
+        <section class="background-light flex flex-col items-center space-y-10 py-10">
+            <h1 class="text-5xl font-extrabold text-center">Pateints Reviews</h1>
+            <div class="slideshow-container flex flex-row items-center ">
+                <a class="prev mx-2 cursor-pointer text-2xl" onclick="plusSlides(-1)">❮</a>
+                <div class="mySlides text-center text-2xl ">
+                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                  <p class="author">- John Keats</p>
+                </div>
+                <div class="mySlides text-center text-2xl ">
+                    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                    <p class="author">- Yatndeep</p>
+                  </div>
+                  <div class="mySlides text-center text-2xl ">
+                    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                    <p class="author">- Neeraj</p>
+                  </div>
+            
+                <div>
+               
+                <a class="next mx-2 text-2xl cursor-pointer" onclick="plusSlides(1)">❯</a>
             </div>
-           </div>
+                </div>
+                
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+        </section>
+        <section>
+            <h1>Contact Us</h1>
+            <p>Our Branches</p>
         </section>
 </body>
+<script>
+    {
+                let valueDisplays = document.querySelectorAll(".largenum");
+            let interval =10;
+
+            valueDisplays.forEach((valueDisplay) => {
+            let startValue =45000;
+            let endValue = parseInt(valueDisplay.getAttribute("largedata-val"));
+
+            let duration = Math.floor(interval / endValue);
+
+            let counter = setInterval(function () {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+            clearInterval(counter);
+            }
+        }, duration);
+        });
+    }
+
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </html>
